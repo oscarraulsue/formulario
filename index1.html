@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <img id = "img"src="./imagenes/1024px-Michael_Schumacher_Signature.svg.png" alt="">
+ 
+    <div class="container">
+           <head class="encabezado">
+            <h1 id="title">Club de fans Michael Schumache</h1>
+          
+            <p id="description">
+               Un espacio hecho para honrar al «Káiser»
+              </p>
+        </head>
+        <main class="principal">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control"
+                      placeholder="INGRESE SU NOMBRE"
+                      required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="name">Correo Electronico</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="INGRESE SU CORREO ELECTRONICO"
+                      required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">¿Desde que edad sigues la F1?</label>
+                    <input
+                      type="number"
+                      name="edad"
+                      min="1"
+                      max="100"
+                      class="form-control"
+                      placeholder="10 AÑOS"
+                      required
+                    />
+                    <div class="form-group">
+                    <p>¿Cual de los 7 campeonatos de Michael Schumache te gusto mas?</p>
+                    <select id="dropdown" name="gustoenexperiencia" class="form-control" required>
+                      <option disabled selected value>Seleccione una opción</option>
+                      <option value="1994">1994</option>
+                      <option value="1995">1995</option>
+                      <option value="2000">2000</option>
+                      <option value="2001">2001</option>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                      <option value="2004">2004</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <p>¿Te gustari recibir noticias del club?</p>
+                        <label title="Seleccione una opción" class="radiobox">
+                          <input
+                            name="cliente-frecuente"
+                            value="si"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                          />  Si</label>
+                
+                       <label
+                        title="Seleccione una opción" class="radiobox">
+                        <input
+                            name="cliente-frecuente"
+                            value="no"
+                            type="radio"
+                            class="input-radio"
+                        />  No</label>
+                     </div>
+                      <div class="form-group">
+                        <p>
+                          ¿Que otros pilotos has seguido?
+                        </p>
+                  
+                        <label title="Seleccionar" class="checkbox">
+                          <input
+                            name="mejora"
+                            value="Verstappen"
+                            type="checkbox"
+                            class="input-checkbox"
+                          /> Max Verstappen</label
+                        >
+                        <label title="Seleccionar" class="checkbox">
+                          <input
+                            name="mejora"
+                            value="Alonso"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />  Fernando Alonso</label
+                        >
+                        <label title="Seleccionar" class="checkbox">
+                            <input
+                              name="mejora"
+                              value="Vettel"
+                              type="checkbox"
+                              class="input-checkbox"
+                            /> Sebastian Vettel</label
+                          >
+                        <label title="Seleccionar"class="checkbox">
+                          <input
+                            name="mejoras"
+                            value="Montoya"
+                            type="checkbox"
+                            class="input-checkbox"
+                          /> Juan Pablo Montoya</label>
+
+                          <label title="Seleccionar" class="checkbox">
+                            <input
+                              name="mejora"
+                              value="Raikkonen"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />  Kimi Raikkonen</label
+                          >
+                          <label title="Seleccionar" class="checkbox">
+                            <input
+                              name="mejora"
+                              value="Webber"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />  Mark Webber</label
+                          >
+                          <label title="Seleccionar" class="checkbox">
+                              <input
+                                name="mejora"
+                                value="Hamilton"
+                                type="checkbox"
+                                class="input-checkbox"
+                              /> Lewis Hamilton</label
+                            >
+                          <label title="Seleccionar"class="checkbox">
+                            <input
+                              name="mejoras"
+                              value="Barrichello"
+                              type="checkbox"
+                              class="input-checkbox"
+                            /> Rubens Barrichello</label>
+                     
+                       
+                      </div>
+                  
+                      <div class="form-group">
+                        <p>Comentarios o Suguerencias adicionales</p>
+                        <textarea
+                          id="commentarios"
+                          class="input-textarea"
+                          name="commentarios"
+                          placeholder="Agrege sus comentarios aquí..."
+                        ></textarea>
+                      </div>
+                  
+                      <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                  
+                </div>
+            
+
+        </main>
+        <footer class="piepagina">
+Gracias por ser parte del club de fans del mejor piloto de la historia
+        </footer>
+    </div>
+
+
+</body>
+</html>
